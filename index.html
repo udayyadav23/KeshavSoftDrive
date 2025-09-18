@@ -5,10 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KeshavSoft - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Fix contrast for card text */
+    .card p {
+      color: #212529 !important; /* Bootstrap dark text */
+    }
+    /* Ensure testimonial cards have readable text */
+    .testimonial-card {
+      background: #ffffff;
+      color: #212529;
+    }
+    /* Hero overlay to improve readability */
+    .hero-section {
+      position: relative;
+      background: url('https://picsum.photos/1920/800') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* dark overlay */
+    }
+    .hero-section .container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">KeshavSoft</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -25,15 +53,29 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-light text-dark text-center py-5">
+  <section class="hero-section d-flex align-items-center text-center">
     <div class="container">
-      <h1 class="fw-bold display-5">Welcome to KeshavSoft</h1>
-      <p class="lead mt-3">A modern web design showcase created as part of the <strong>Keshave Soft Company Drive</strong> task.</p>
-      <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More</a>
+      <h1 class="fw-bold display-3">Innovating The Future</h1>
+      <p class="lead mt-3">We deliver cutting-edge solutions in Web, Blockchain, and AI</p>
+      <a href="about.html" class="btn btn-primary btn-lg mt-3">Explore More</a>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Trusted Companies -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Trusted By Leading Companies</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-4 col-md-2"><img src="https://via.placeholder.com/150x50?text=Google" class="img-fluid" alt="Google"></div>
+        <div class="col-4 col-md-2"><img src="https://via.placeholder.com/150x50?text=Amazon" class="img-fluid" alt="Amazon"></div>
+        <div class="col-4 col-md-2"><img src="https://via.placeholder.com/150x50?text=Microsoft" class="img-fluid" alt="Microsoft"></div>
+        <div class="col-4 col-md-2"><img src="https://via.placeholder.com/150x50?text=IBM" class="img-fluid" alt="IBM"></div>
+        <div class="col-4 col-md-2"><img src="https://via.placeholder.com/150x50?text=Infosys" class="img-fluid" alt="Infosys"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
   <section class="container my-5">
     <h2 class="fw-bold text-center mb-5">Our Range of Expertise</h2>
     <div class="row g-4">
@@ -42,7 +84,7 @@
           <div class="card-body">
             <div class="mb-3 fs-1 text-primary">💻</div>
             <h5 class="card-title fw-bold">Web Development</h5>
-            <p class="text-muted">Building modern, responsive, and scalable websites using the latest technologies like Bootstrap, React, and Spring Boot.</p>
+            <p>Building responsive, scalable websites using React, Bootstrap & Spring Boot.</p>
           </div>
         </div>
       </div>
@@ -51,7 +93,7 @@
           <div class="card-body">
             <div class="mb-3 fs-1 text-success">🔒</div>
             <h5 class="card-title fw-bold">Blockchain Solutions</h5>
-            <p class="text-muted">Developing secure and transparent blockchain applications, smart contracts, and property registry systems.</p>
+            <p>Smart contracts, secure blockchain apps & property registry systems.</p>
           </div>
         </div>
       </div>
@@ -60,41 +102,67 @@
           <div class="card-body">
             <div class="mb-3 fs-1 text-warning">📊</div>
             <h5 class="card-title fw-bold">AI & Data Analytics</h5>
-            <p class="text-muted">Leveraging machine learning and predictive models to deliver insights that enhance decision-making and performance.</p>
+            <p>Predictive models & analytics that drive intelligent business decisions.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Highlights Section -->
+  <!-- Alumni in MAANG -->
   <section class="bg-dark text-light py-5">
     <div class="container text-center">
-      <h2 class="fw-bold mb-4">Why Choose Us?</h2>
+      <h2 class="fw-bold mb-4">Our Talent Shines at MAANG Companies</h2>
+      <p class="lead mb-5">KeshavSoft employees and alumni have been selected into top tech giants across the globe.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-2"><img src="https://via.placeholder.com/150x60?text=Meta" class="img-fluid bg-white p-2 rounded" alt="Meta"></div>
+        <div class="col-6 col-md-2"><img src="https://via.placeholder.com/150x60?text=Amazon" class="img-fluid bg-white p-2 rounded" alt="Amazon"></div>
+        <div class="col-6 col-md-2"><img src="https://via.placeholder.com/150x60?text=Apple" class="img-fluid bg-white p-2 rounded" alt="Apple"></div>
+        <div class="col-6 col-md-2"><img src="https://via.placeholder.com/150x60?text=Netflix" class="img-fluid bg-white p-2 rounded" alt="Netflix"></div>
+        <div class="col-6 col-md-2"><img src="https://via.placeholder.com/150x60?text=Google" class="img-fluid bg-white p-2 rounded" alt="Google"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">What Our Clients Say</h2>
       <div class="row g-4">
-        <div class="col-md-3">
-          <h3 class="fw-bold">10+</h3>
-          <p class="text-muted">Projects Completed</p>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 p-4 testimonial-card">
+            <p>"KeshavSoft transformed our digital presence! Highly recommend their web solutions."</p>
+            <h6 class="fw-bold mt-3">– John D, Google</h6>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h3 class="fw-bold">5+</h3>
-          <p class="text-muted">Industries Covered</p>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 p-4 testimonial-card">
+            <p>"Their blockchain expertise gave us a secure property registry system. Amazing team!"</p>
+            <h6 class="fw-bold mt-3">– Priya R, Infosys</h6>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h3 class="fw-bold">100%</h3>
-          <p class="text-muted">Responsive Design</p>
-        </div>
-        <div class="col-md-3">
-          <h3 class="fw-bold">24/7</h3>
-          <p class="text-muted">Support & Guidance</p>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 p-4 testimonial-card">
+            <p>"AI models developed by them boosted our business decision-making efficiency by 40%."</p>
+            <h6 class="fw-bold mt-3">– Alex M, Amazon</h6>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Call-to-Action -->
+  <section class="bg-primary text-light text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold">Ready to Transform Your Career or Business?</h2>
+      <p class="lead mt-2">Join us and be part of the next big innovation journey.</p>
+      <a href="contact.html" class="btn btn-light btn-lg mt-3">Get in Touch</a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-dark text-light text-center py-3 mt-5">
-    <p class="mb-0">&copy; 2025 MySite | Created as a task for Keshave Soft Company Drive</p>
+    <p class="mb-0">&copy; 2025 KeshavSoft | Designed with ❤ for Innovation</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

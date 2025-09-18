@@ -3,32 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - MySite</title>
+  <title>About - KeshavSoft</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
-    /* Make body take full height and use flex layout */
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
-
-    /* Content grows to push footer down */
     main {
       flex: 1;
     }
-
     footer {
-      margin-top: auto; /* Pushes footer to bottom */
+      margin-top: auto;
+    }
+    .maang-names span {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #0d6efd;
+      color: #fff;
+      border-radius: 50px;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <!-- Navbar (Header stays on top) -->
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">MySite</a>
+      <a class="navbar-brand fw-bold" href="index.html">KeshavSoft</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,21 +51,79 @@
   <main class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <h1 class="fw-bold mb-4">About This Page</h1>
-        <p class="lead">This page has been developed as part of a task for the <strong>Keshave Soft Company Drive</strong>. It demonstrates my ability to design modern, responsive, and professional web pages using Bootstrap 5.</p>
-        <p>The layout is built with Bootstrap’s grid system and styled components to ensure that the design is adaptive, clean, and user-friendly. The focus is on simplicity, responsiveness, and maintaining a consistent structure across devices.</p>
-        <p>Through this task, I aimed to showcase skills in front-end development, attention to design detail, and the ability to create a professional-looking About page suitable for real-world projects.</p>
+        <h1 class="fw-bold mb-4">About KeshavSoft</h1>
+        <p class="lead">KeshavSoft is a leading technology company located in <strong>Kakinada, Andhra Pradesh</strong>. We specialize in Web Development, Blockchain Solutions, and AI & Data Analytics, delivering innovative solutions to clients worldwide.</p>
+        <p>Our employees and alumni have been selected into top tech companies, including MAANG companies, showcasing the quality of talent we nurture.</p>
       </div>
       <div class="col-md-6 text-center">
         <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" 
-             class="img-fluid rounded shadow" alt="Bootstrap Demo Image">
+             class="img-fluid rounded shadow" alt="KeshavSoft Logo">
       </div>
     </div>
+
+    <!-- Services Section -->
+    <section class="container my-5">
+      <h2 class="fw-bold text-center mb-5">Our Range of Expertise</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 text-center p-4">
+            <div class="card-body">
+              <div class="mb-3 fs-1 text-primary">💻</div>
+              <h5 class="card-title fw-bold">Web Development</h5>
+              <p class="text-muted">Building responsive, scalable websites using React, Bootstrap & Spring Boot.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 text-center p-4">
+            <div class="card-body">
+              <div class="mb-3 fs-1 text-success">🔒</div>
+              <h5 class="card-title fw-bold">Blockchain Solutions</h5>
+              <p class="text-muted">Smart contracts, secure blockchain apps & property registry systems.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 text-center p-4">
+            <div class="card-body">
+              <div class="mb-3 fs-1 text-warning">📊</div>
+              <h5 class="card-title fw-bold">AI & Data Analytics</h5>
+              <p class="text-muted">Predictive models & analytics that drive intelligent business decisions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAANG Alumni Section -->
+    <section class="bg-dark text-light py-5 text-center">
+      <h2 class="fw-bold mb-4">Our Talent Shines at MAANG Companies</h2>
+      <p class="lead mb-4">Employees and alumni of KeshavSoft have been selected into top tech giants across the globe.</p>
+      <div class="maang-names">
+        <span>Meta</span>
+        <span>Amazon</span>
+        <span>Apple</span>
+        <span>Netflix</span>
+        <span>Google</span>
+      </div>
+    </section>
+
+ 
+        
+
+    <!-- Call-to-Action Section -->
+    <section class="bg-primary text-light text-center py-5">
+      <div class="container">
+        <h2 class="fw-bold">Ready to Transform Your Career or Business?</h2>
+        <p class="lead mt-2">Join us and be part of the next big innovation journey.</p>
+        <a href="contact.html" class="btn btn-light btn-lg mt-3">Get in Touch</a>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer (sticks at bottom) -->
-  <footer class="bg-dark text-light text-center py-3">
-    <p class="mb-0">&copy; 2025 MySite | Task created for Keshave Soft Company Drive</p>
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 KeshavSoft | Designed with ❤ for Innovation | Kakinada, Andhra Pradesh</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
