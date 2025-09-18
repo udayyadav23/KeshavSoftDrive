@@ -5,9 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - MySite</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Make body take full height and use flex layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Content grows to push footer down */
+    main {
+      flex: 1;
+    }
+
+    footer {
+      margin-top: auto; /* Pushes footer to bottom */
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Navbar (Header stays on top) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">MySite</a>
@@ -24,8 +42,8 @@
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section class="container my-5">
+  <!-- Main Content -->
+  <main class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-6">
         <h1 class="fw-bold mb-4">About This Page</h1>
@@ -38,10 +56,10 @@
              class="img-fluid rounded shadow" alt="Bootstrap Demo Image">
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light text-center py-3 mt-5">
+  <!-- Footer (sticks at bottom) -->
+  <footer class="bg-dark text-light text-center py-3">
     <p class="mb-0">&copy; 2025 MySite | Task created for Keshave Soft Company Drive</p>
   </footer>
 
